@@ -1,0 +1,22 @@
+{
+    "name": "thumbimage/thumbimage",
+    "description": "generates and writes thumbnails for images",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Olena Zamkova",
+            "email": "olena.zamkova@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Thumbimage\\Thumbimage\\": "src"
+        }
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "imagick": ">=3.4.0",
+        "ext-mysqli": "*"
+    }
+}
