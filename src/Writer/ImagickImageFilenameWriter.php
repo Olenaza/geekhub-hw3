@@ -11,12 +11,12 @@ class ImagickImageFilenameWriter implements WriterInterface
 
     /**
      * @param string $directory
-     * @param array $file
+     * @param array  $file
      */
     public function __construct($directory, $file)
     {
         $fileId = $file['id'];
-        $fileName = $directory . '/' . $fileId . '_thumbnail.jpg';
+        $fileName = $directory.'/'.$fileId.'_thumbnail.jpg';
         $this->imagickImageWriter = new ImagickImageWriter($fileName);
     }
 

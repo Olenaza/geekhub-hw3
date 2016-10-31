@@ -21,8 +21,8 @@ class ThumbnailMaker
     }
 
     /**
-     * @param int $height
-     * @param int $width
+     * @param int             $height
+     * @param int             $width
      * @param WriterInterface $writer
      */
     public function retrieveThumbnails($height, $width, WriterInterface $writer)
@@ -30,6 +30,6 @@ class ThumbnailMaker
         $files = $this->imageCollection->getImages();
         foreach ($files as $file) {
             $writer->writeThumbnail($height, $width, $file);
-        };
+        }
     }
 }

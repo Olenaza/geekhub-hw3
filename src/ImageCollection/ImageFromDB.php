@@ -26,8 +26,8 @@ class ImageFromDB implements ImageCollectionInterface
     {
         $this->host = $host;
         $this->user = $user;
-        $this->pass= $pass;
-        $this->db= $db;
+        $this->pass = $pass;
+        $this->db = $db;
         $this->table = $table;
         $this->column = $column;
     }
@@ -37,7 +37,7 @@ class ImageFromDB implements ImageCollectionInterface
      */
     public function getImages()
     {
-        /**
+        /*
          * Connect to a database using $this->host, $this->user, $this->pass, $this->db
          * and retrieve images data from $this->table
          * to the array of associative arrays with two key => value pairs:

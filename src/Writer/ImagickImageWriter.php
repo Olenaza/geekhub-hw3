@@ -16,7 +16,7 @@ class ImagickImageWriter extends AbstractFileWriter implements WriterInterface
         $image->thumbnailImage($height, $width, true);
 
         // Set the image format to jpg
-        $image->setImageFormat("jpeg");
+        $image->setImageFormat('jpeg');
 
         //delete unneeded data to reduce file size
         $image->stripImage();
